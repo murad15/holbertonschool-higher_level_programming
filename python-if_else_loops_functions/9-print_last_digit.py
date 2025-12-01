@@ -1,4 +1,9 @@
 #!/usr/bin/python3
 def print_last_digit(number):
-    n = f"{number}"
-    return n[-1]
+    try:
+        last = abs(int(number)) % 10
+        print(last)
+        return last
+    except (ValueError, TypeError):
+        print("Input must be a number")
+        return None

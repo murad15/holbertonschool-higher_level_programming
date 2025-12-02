@@ -6,7 +6,7 @@ if __name__ == "__main__":
     "{} + {} = {}".format(a, b, add(a, b))
     "{} - {} = {}".format(a, b, sub(a, b))
     "{} * {} = {}".format(a, b, mul(a, b))
-    "{} / {} = {}".format(a, b, fiv(a, b))
+    "{} / {} = {}".format(a, b, div(a, b))
 
 
 

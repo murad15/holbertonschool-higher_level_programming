@@ -2,7 +2,7 @@
 import sys
 
 if __name__ == "__main__":
-sum = 0
-for i in sys.argv:
-   sum = sum + int(i)
-print("{}".format(sum))
+    sum = 0
+    for i in sys.argv[1:]:
+        sum = sum + int(i)
+    print(sum)

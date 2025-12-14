@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-"""Defines a function that tance of a class."""
+"""Check if an object is an instance of a class or its subclass."""
 
 
-def is_same_class(obj, a_class):
-    """Check if `obj` is exactly an instance of the class a_class"""
-
-    return type(obj) is a_class
+def is_kind_of_class(obj, a_class):
+    """Return True if obj is an instance of a_class or its subclass."""
+    return isinstance(obj, a_class)

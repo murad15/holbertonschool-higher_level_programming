@@ -8,8 +8,8 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         '''Instnciate the parameters'''
 
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -33,7 +33,7 @@ class Rectangle:
     def height(self):
         '''Property getter'''
 
-        return self.__width
+        return self.__height
 
     @height.setter
     def height(self, value):

@@ -18,27 +18,20 @@ def serialize_to_xml(dictionary, filename):
     tree = ET.ElementTree(root)
     tree.write(filename, encoding="utf-8", xml_declaration=True)
 
-
 def deserialize_from_xml(filename):
-    """
-    Deserialize an XML file into a Python dictionary.
-
-    :param filename: Input XML filename
-    :return: Python dictionary
-    """
     tree = ET.parse(filename)
     root = tree.getroot()
-
     result = {}
 
     for child in root:
         text = child.text
 
-        # Basic type conversion
         if text is not None:
+            # Convert to int if possible
             if text.isdigit():
                 value = int(text)
             else:
+                # Convert to float if possible
                 try:
                     value = float(text)
                 except ValueError:
@@ -49,3 +42,4 @@ def deserialize_from_xml(filename):
         result[child.tag] = value
 
     return result
+

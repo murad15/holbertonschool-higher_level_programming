@@ -1,4 +1,4 @@
---Commernj sdfsdfn sdf
+-- Commernj sdfsdfn sdf
 
 
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;

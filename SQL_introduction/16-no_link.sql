@@ -1,5 +1,5 @@
 -- Skas askdas dkasd kkf
 
 
-SELECT score, name from second_table
+SELECT score, name FROM second_table
 WHERE name IS NOT NULL;

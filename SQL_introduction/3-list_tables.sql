@@ -1,5 +1,5 @@
 -- Comment to start
 
 
-USE mysql;
+USE mysql
 SHOW tables;

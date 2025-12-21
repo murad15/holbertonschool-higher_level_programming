@@ -1,4 +1,4 @@
 -- Comment comment for 
 
 
-SELECT * from first_table;
+SELECT * FROM first_table;

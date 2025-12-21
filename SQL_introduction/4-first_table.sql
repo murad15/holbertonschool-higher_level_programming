@@ -1,0 +1,7 @@
+-- COMMENT TO START
+
+
+CREATE TABLE first_table (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(256)
+);
